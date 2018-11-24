@@ -1,3 +1,5 @@
+'use strict';
+
 var GIPHY_LOADING_URL = 'http://www.ifmo.ru/images/loader.gif';
 var styles = {
   minHeight: '310px',
@@ -5,12 +7,6 @@ var styles = {
 };
 
 Gif = React.createClass({
-
-  propTypes: {
-    sourceUrl: React.PropTypes.string.isRequired,
-    url: React.PropTypes.string.isRequired,
-    loading: React.PropTypes.bool.isRequired,
-  },
 
   getUrl: function() {
     return this.props.sourceUrl || GIPHY_LOADING_URL;
