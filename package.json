@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "babel excercises.js --watch --out-file excercises-compiled.js",
     "test": "npm-run-all test:*",
     "start": "http-server",
     "test:html": "globstar nu-html-checker *.html",
